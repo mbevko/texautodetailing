@@ -166,6 +166,10 @@ a {
 
 @media(max-width:800px) {
 
+    .universal_nav {
+        top: 90%;
+    }
+
     .logo {
         width: 200px;
     }
@@ -180,6 +184,6 @@ a {
     }
 
     .see_more {
-        padding: 150px 30px;
+        padding: 100px 10px;
     }
 }
