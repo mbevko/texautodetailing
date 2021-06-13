@@ -173,8 +173,8 @@ a {
 @media(max-width:800px) {
 
     .home_main_content {
-        height: 400px;
-        align-items: space-between;
+        height: 90vh;
+        justify-content: flex-end;
     }
 
     .universal_nav {
