@@ -167,7 +167,6 @@ a {
 @media(max-width:800px) {
 
     .home_main_content {
-        border: solid red 1px;
         height: 500px
     }
 
