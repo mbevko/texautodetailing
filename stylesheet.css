@@ -166,6 +166,11 @@ a {
 
 @media(max-width:800px) {
 
+    .home_main_content {
+        border: solid red 1px;
+        height: 500px
+    }
+
     .universal_nav {
         top: 90%;
     }
@@ -184,6 +189,7 @@ a {
     }
 
     .see_more {
-        padding: 100px 10px;
+        padding: 50px 10px;
+        font-size: 10pt;
     }
 }
