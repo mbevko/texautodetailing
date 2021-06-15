@@ -84,12 +84,11 @@ a {
 
 .home_slogan_logo p {
     font-size: 70pt;
-    margin: 0;
-    background: #000000;
-    background: -webkit-linear-gradient(to right, #000000 0%, fff 100%);
-    background: -moz-linear-gradient(to right, #000000 0%, fff 100%);
-    background: linear-gradient(to right, #000000 0%, fff 100%);
-    -webkit-background-clip: text;
+    font-weight: 600;
+    margin: 0; 
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .2), #ffffff); 
+    background: linear-gradient(top, #000000, #ffffff); 
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:center;
     -webkit-text-fill-color: transparent;
 }
 
@@ -101,7 +100,7 @@ a {
     cursor: pointer;
     z-index: 2;
     width: 30px;
-    height: 80px;
+    height: 60px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -117,8 +116,9 @@ a {
 
 .scroll_icon {
     background: var(--main-font-color);
-    width: 2px;
-    height: 40%;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
 }
 
 .see_more {
@@ -126,7 +126,7 @@ a {
 }
 
 .universal_nav {
-    height: 30px;
+    height: 40px;
     width: 85px;
     position: fixed;
     background-color: blue;
@@ -139,7 +139,6 @@ a {
     -o-transform: rotate(-90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     margin-left: -25px;
-    
 }
 
 .universal_nav .nav_items {
@@ -150,13 +149,14 @@ a {
     text-decoration: none;
     background-color: var(--secondary-color);
     border-radius: 5px;
+    box-shadow: 0px 1px 15px green;
 }
 
 .nav_items a {
     display: inline-block;
     margin: 0 20px;
     cursor: pointer;
-    color: #2F303A;
+    color: #16161a;
     font-size: 13pt;
     font-weight: 500;
 }
