@@ -83,10 +83,10 @@ a {
 }
 
 .home_slogan_logo p {
-    font-size: 70pt;
+    font-size: 100pt;
     font-weight: 600;
     margin: 0; 
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .8), #ffffff); 
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .2), #ffffff); 
     background: linear-gradient(top, #000000, #ffffff); 
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:center;
     -webkit-text-fill-color: transparent;
@@ -129,7 +129,6 @@ a {
     height: 40px;
     width: 85px;
     position: fixed;
-    background-color: blue;
     left: -5px;
     top: 74%;
     z-index: 1000;
@@ -147,16 +146,20 @@ a {
     width: 400px;
     padding: 25px 30px;
     text-decoration: none;
-    background-color: var(--secondary-color);
-    border-radius: 5px;
+    border: solid var(--secondary-color) 1px;
+    border-radius: 10px;
+}
+
+.nav_items a:hover {
+    color: var(--secondary-color);
 }
 
 .nav_items a {
     display: inline-block;
     margin: 0 20px;
     cursor: pointer;
-    color: #16161a;
-    font-size: 13pt;
+    color: var(--main-font-color);
+    font-size: 12pt;
     font-weight: 500;
 }
 
