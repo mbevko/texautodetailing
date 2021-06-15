@@ -96,7 +96,7 @@ a {
 
 .see_more {
     border: solid var(--primary-color) 1px;
-    padding: 100px 20px;
+    padding: 20px 100px;
     border-radius: 80px;
     font-size: 15pt;
     color: var(--main-font-color);
