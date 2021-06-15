@@ -96,9 +96,9 @@ a {
 
 .see_more {
     border: solid var(--primary-color) 1px;
-    padding: 20px 100px;
+    padding: 100px 20px;
     border-radius: 80px;
-    font-size: 20pt;
+    font-size: 15pt;
     color: var(--main-font-color);
     cursor: pointer;
     z-index: 2;
@@ -189,8 +189,12 @@ a {
         font-size: 14pt;
     }
 
+    .home_slogan_logo {
+        height: 400px;
+    }
+
     .home_slogan_logo p{
-        font-size: 16pt;
+        font-size: 24pt;
         width: auto;
     }
 
