@@ -162,6 +162,7 @@ a {
     font-size: 12pt;
     font-weight: 500;
 }
+/*----------------------------------------services-------------------------------*/
 
 .services_page {
     position: relative;
@@ -172,27 +173,51 @@ a {
     overflow: hidden;
 }
 
+.services_body {
+    height: 100vw;
+    width: 85vw;
+    display: flex;
+    margin: auto;
+}
+
+.serv_box {
+    border: solid var(--secondary-color) 1px;
+    width: 400px;
+    height: 400px;
+    color: var(--main-font-color);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.serv_box li:first-of-type {
+    list-style: none;
+    padding: none;
+    font-size: 20pt;
+}
+
+.pricing {
+    list-style: none;
+    padding: none;
+    font-size: 14pt;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.contact {
+    height: 100vh;
+}
+
+/*----------------------------------------mobile-------------------------------*/
+
 
 @media(max-width:800px) {
 
     .home_main_content {
-        height: 90vh;
+        height: 100vh;
         justify-content: flex-end;
     }
 
     .universal_nav {
-        height: 40px;
-        width: 85px;
-        position: fixed;
-        left: -5px;
-        top: 74%;
-        z-index: 100;
-        transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-        margin-left: -25px;
         padding: 0;
     }
     
