@@ -81,10 +81,16 @@ a {
     justify-content: center;
 }
 
+.logo {
+    width: 800px;
+    filter: invert(20%) sepia(99%) saturate(7499%) hue-rotate(219deg) brightness(90%) contrast(87%);
+}
+
 .home_slogan_logo p {
     font-size: 100pt;
     font-weight: 600;
     margin: 0; 
+    padding: 0;
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, .2), #ffffff); 
     background: linear-gradient(top, #000000, #ffffff); 
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:center;
@@ -161,6 +167,10 @@ a {
     color: var(--main-font-color);
     font-size: 12pt;
     font-weight: 500;
+}
+
+svg {
+    border: solid red ;
 }
 /*----------------------------------------services-------------------------------*/
 
