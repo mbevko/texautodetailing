@@ -92,7 +92,7 @@ a {
     font-weight: 600;
     margin: 0; 
     padding: 0;
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .2), rgba(252, 255, 121, .9)); 
+    background: -webkit-linear-gradient(top left, rgba(0, 0, 0, .2), rgba(252, 255, 121, .8)); 
     background: linear-gradient(top, #000000, #FCFF79); 
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:center;
     -webkit-text-fill-color: transparent;
@@ -241,6 +241,7 @@ a {
 .service_heading {
     font-size: 50pt;
     color: white;
+    text-align: center;
 }
 
 .serv_box {
@@ -253,6 +254,7 @@ a {
     background: linear-gradient(322.3deg, rgba(122, 207, 255, 0.14) 1.54%, rgba(34, 37, 37, 0) 74.88%);
     margin: 15px;
     transition: .5s;
+    padding: 0 20px 0 0;
 }
 
 .serv_box:hover {
@@ -311,12 +313,13 @@ li {
     }
 
     .logo {
-        width: 450px;
+        width: 360px;
     }
     
 
     .home_info p {
         font-size: 14pt;
+        display: none;
     }
 
     .home_info_icons {
@@ -325,6 +328,7 @@ li {
         padding: 0;
         margin: 0;
         font-size: 12pt;
+        display: none;
     }
 
     .home_slogan_logo {
