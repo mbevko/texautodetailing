@@ -17,7 +17,7 @@ body {
     --font-style-one: 'Saira', sans-serif;
     --font-style-two: 'Ropa Sans', sans-serif;
     --primary-color: #114FC8;
-    --secondary-color: #4fa75c;
+    --secondary-color: #888686;
     --background-color: linear-gradient(243.18deg, #2F303A 0%, rgba(56, 56, 56, 0) 100%), #000000;
 }
 
@@ -91,8 +91,8 @@ a {
     font-weight: 600;
     margin: 0; 
     padding: 0;
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .2), #ffffff); 
-    background: linear-gradient(top, #000000, #ffffff); 
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .2), rgba(252, 255, 121, .9)); 
+    background: linear-gradient(top, #000000, #FCFF79); 
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:center;
     -webkit-text-fill-color: transparent;
     position: relative;
@@ -194,29 +194,23 @@ svg {
 }
 
 .serv_box {
-    border: solid var(--primary-color) 1px;
-    height: 270px;
+    height: inherit;
     color: var(--main-font-color);
-    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-width: 400px;
+    justify-content: space-between;
+    width: 400px;
+    background: linear-gradient(322.3deg, rgba(122, 207, 255, 0.14) 1.54%, rgba(34, 37, 37, 0) 74.88%);
 }
 
-.serv_box h3 {
-    padding: 0;
-    margin: 0;
-}
-
-.serv_box p {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
 
 .serv_headings {
     font-size: 20pt;
+}
+
+
+li {
+    list-style: none;
 }
 
 .pricing {
@@ -227,30 +221,6 @@ svg {
     color: var(--primary-color);
 }
 
-.basic, .deluxe {
-    width: 45%;
-    height: 400px;
-}
-
-.exterior, .extra, .interior {
-    width: 30%;
-    height: 400px;
-}
-
-.signature {
-    width: 92%;
-    height: inherit;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.signature_container {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    font-size: 20pt;
-}
-
 /*----------------------------------------mobile-------------------------------*/
 
 
@@ -258,7 +228,7 @@ svg {
 
     .home_main_content {
         height: 100vh;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .universal_nav {
@@ -277,31 +247,29 @@ svg {
     }
 
     .logo {
-        width: 300px;
+        width: 450px;
     }
     
 
     .home_info p {
         font-size: 14pt;
-        display: none;
     }
 
     .home_info_icons {
         flex-direction: row;
-        width: 100px;
+        width: 60px;
         padding: 0;
         margin: 0;
         font-size: 12pt;
-        display: none;
     }
 
     .home_slogan_logo {
         height: 400px;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .home_slogan_logo p{
-        font-size: 40pt;
+        font-size: 50pt;
         width: 300px;
         display: inline-block;
         padding: 0;
