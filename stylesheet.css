@@ -13,23 +13,24 @@ body {
 }
 
 :root {
-    --main-font-color: #ACACAC;
+    --main-font-color: #acacac;
     --font-style-one: 'Saira', sans-serif;
     --font-style-two: 'Ropa Sans', sans-serif;
     --primary-color: #114FC8;
-    --secondary-color: #888686;
-    --background-color: linear-gradient(243.18deg, #2F303A 0%, rgba(56, 56, 56, 0) 100%), #000000;
+    --secondary-color: #4480b8;
+    --background-color: linear-gradient(243.18deg, #1d2742 0%, rgba(56, 56, 56, 0) 100%), #000000;
 }
 
 a {
     text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .page {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(243.18deg, #2F303A 0%, rgba(56, 56, 56, 0) 100%), #000000;
+    background: var(--background-color);
     font-family: var(--font-style-one);
     overflow: hidden;
 }
@@ -125,10 +126,12 @@ a {
     width: 5px;
     height: 5px;
     border-radius: 10px;
+    transition: .4s;
 }
 
 .see_more {
     color: var(--main-font-color);
+    padding-top: 10px;
 }
 
 .universal_nav {
@@ -152,8 +155,6 @@ a {
     width: 400px;
     padding: 25px 30px;
     text-decoration: none;
-    border: solid var(--secondary-color) 1px;
-    border-radius: 10px;
 }
 
 .nav_items a:hover {
@@ -169,17 +170,23 @@ a {
     font-weight: 500;
 }
 
-svg {
-    border: solid red ;
-}
 /*----------------------------------------services-------------------------------*/
 .gauge_container {
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
     bottom: 50px;
-    height: 500px;
+    min-height: 500px;
+    max-height: 900px;
     align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .full_gauge {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
   
   .bar {
@@ -192,11 +199,6 @@ svg {
     height: inherit;
     width: 0px;
     transition: 2s;
-  }
-  
-  .filler_active {
-    background: magenta;
-    width: 151px;
   }
   
   .pbar {
@@ -221,6 +223,8 @@ svg {
     height: inherit;
     align-items: center;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -232,6 +236,11 @@ svg {
     justify-content: center;
     gap: 15px;
     height: inherit;
+}
+
+.service_heading {
+    font-size: 50pt;
+    color: white;
 }
 
 .serv_box {
@@ -255,6 +264,12 @@ svg {
     font-weight: bold;
     color: white;
     text-shadow: 0 0 10px white;
+}
+
+.serv_footings {
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
 }
 
 
