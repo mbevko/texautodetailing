@@ -91,8 +91,8 @@ a {
     font-weight: 600;
     margin: 0; 
     padding: 0;
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .2), #ffffff); 
-    background: linear-gradient(top, #000000, #ffffff); 
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .2), rgba(252, 255, 121, .9)); 
+    background: linear-gradient(top, #000000, #FCFF79); 
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:center;
     -webkit-text-fill-color: transparent;
     position: relative;
