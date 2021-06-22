@@ -298,24 +298,22 @@ li {
     }
 
     .universal_nav {
-        display: flex;
-        position: fixed;
         height: 40px;
         top: 0;
         left: 0;
         right: 0;
         transform: rotate(0);
         width: inherit;
-        padding: 0;
+        padding: 10px;
         margin: 0;
     }
     
     .universal_nav .nav_items {
         display: flex;
         position: block;
-        justify-content: space-around;
-        align-items: flex-end;
-        width: 100%;
+        justify-content: space-between;
+        align-items: space-between;
+        width: 50%;
         flex-direction: row-reverse;
         padding: 0;
         margin: 0;
