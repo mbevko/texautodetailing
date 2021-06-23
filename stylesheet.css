@@ -247,7 +247,7 @@ a {
     margin: 0 auto 0 auto;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     height: inherit;
 }
 
@@ -267,7 +267,14 @@ a {
     background: linear-gradient(322.3deg, rgba(122, 207, 255, 0.14) 1.54%, rgba(34, 37, 37, 0) 74.88%);
     margin: 15px;
     transition: .5s;
+<<<<<<< HEAD
     padding: 0 20px 0 0;
+=======
+}
+
+.serv_box:hover {
+    box-shadow: 0px 0px 20px rgba(66, 68, 83, 0.664);
+>>>>>>> experimental
 }
 
 .serv_box:hover {
@@ -277,6 +284,7 @@ a {
 .serv_headings {
     font-size: 20pt;
     font-weight: bold;
+<<<<<<< HEAD
     color: white;
     text-shadow: 0 0 10px white;
 }
@@ -285,6 +293,10 @@ a {
     color: white;
     font-weight: bold;
     font-size: 14pt;
+=======
+    text-shadow: 0px 0px 20px rgba(248, 248, 248, 0.664);
+    color: white;
+>>>>>>> experimental
 }
 
 
