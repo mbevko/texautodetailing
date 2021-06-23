@@ -9,7 +9,6 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
-    background: var(--background-color);
     font-family: var(--font-style-one);
 
 }
@@ -18,9 +17,9 @@ body {
     --main-font-color: #acacac;
     --font-style-one: 'Saira', sans-serif;
     --font-style-two: 'Ropa Sans', sans-serif;
-    --primary-color: #114FC8;
-    --secondary-color: #4480b8;
-    --background-color: linear-gradient(243.18deg, #1d2742 0%, rgba(56, 56, 56, 0) 100%), #000000;
+    --primary-color: #33d39e;
+    --secondary-color: #114fc8;
+    --background-color: linear-gradient(243.18deg, #373a50 0%, rgba(56, 56, 56, 0) 100%), #000000;
 }
 
 a {
@@ -32,7 +31,7 @@ a {
     position: relative;
     width: 100vw;
     height: 100vh;
-    
+    background: var(--background-color);
     overflow: hidden;
 }
 
@@ -50,7 +49,7 @@ a {
 .home_info p {
     margin: 0;
     padding: 0;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 14pt;
 }
 
@@ -64,7 +63,7 @@ a {
 }
 
 .home_info_icons a{
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 24pt;
 }
 
@@ -102,7 +101,8 @@ a {
 }
 
 .scroll_link {
-    border: solid var(--primary-color) 1px;
+    border: solid var(--secondary-color) 1px;
+    box-shadow: 0 0 10px var(--secondary-color);
     font-size: 15pt;
     color: var(--main-font-color);
     cursor: pointer;
