@@ -10,7 +10,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: var(--font-style-one);
-
+    background: var(--background-color);
 }
 
 :root {
@@ -31,7 +31,7 @@ a {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: var(--background-color);
+    
     overflow: hidden;
 }
 
@@ -185,7 +185,6 @@ a {
 
 /*----------------------------------------services-------------------------------*/
 .gauge_container {
-    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     bottom: 50px;

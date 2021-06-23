@@ -3,55 +3,29 @@ let pbar = document.querySelectorAll(".full_gauge .pbar");
 const speed = 50;
 
 
+const gaugeAnime = () => {
+    filler.forEach(fill => {
+        fill.style.cssText = `width: inherit; background: ${fill.getAttribute('data-bg')}`
+    });
 
+    pbar.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
 
-window.addEventListener('scroll', () => {
-    if (scrollY > 935 && screen.width > 800) {
-        filler.forEach(fill => {
-            fill.style.cssText = `width: inherit; background: ${fill.getAttribute('data-bg')}`
-        });
+            const inc = target / speed;
 
-        pbar.forEach(counter => {
-            const updateCount = () => {
-                const target = +counter.getAttribute("data-target");
-                const count = +counter.innerText;
+            if (count < target) {
+                counter.innerText = Math.floor(count + inc);
+                setTimeout(updateCount, 40)
 
-                const inc = target / speed;
-
-                if (count < target) {
-                    counter.innerText = Math.floor(count + inc);
-                    setTimeout(updateCount, 60)
-
-                } else {
-                    count.innerText = target;
-                }
+            } else {
+                count.innerText = target;
             }
+        }
 
-            updateCount()
-        })
+        updateCount()
+    })
+}
 
-    } else if(scrollY > 540 && screen.width < 800){
-        filler.forEach(fill => {
-            fill.style.cssText = `width: inherit; background: ${fill.getAttribute('data-bg')}`
-        });
-
-        pbar.forEach(counter => {
-            const updateCount = () => {
-                const target = +counter.getAttribute("data-target");
-                const count = +counter.innerText;
-
-                const inc = target / speed;
-
-                if (count < target) {
-                    counter.innerText = Math.floor(count + inc);
-                    setTimeout(updateCount, 60)
-
-                } else {
-                    count.innerText = target;
-                }
-            }
-
-            updateCount()
-        })
-    }
-});
+gaugeAnime()
