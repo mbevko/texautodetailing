@@ -366,6 +366,7 @@ form {
     resize: none;
     color: white;
     font-size: 12pt;
+    font-family: 'Roboto', sans-serif;
   }
 
   textarea::placeholder {

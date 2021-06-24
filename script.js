@@ -3,7 +3,7 @@ let pbar = document.querySelectorAll(".full_gauge .pbar");
 const speed = 50;
 
 
-const gaugeAnime = () => {
+
     filler.forEach(fill => {
         fill.style.cssText = `width: inherit; background: ${fill.getAttribute('data-bg')}`
     });
@@ -26,6 +26,3 @@ const gaugeAnime = () => {
 
         updateCount()
     })
-}
-
-gaugeAnime()
