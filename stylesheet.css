@@ -189,11 +189,11 @@ a {
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
-    bottom: 50px;
-    min-height: 500px;
+    min-height: 400px;
     max-height: 900px;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 70px;
   }
 
   .full_gauge {
@@ -261,7 +261,7 @@ a {
 .serv_footings {
     color: white;
     font-weight: bold;
-    font-size: 14pt;
+    font-size: 16pt;
 }
 
 .serv_box {
@@ -271,10 +271,14 @@ a {
     flex-direction: column;
     justify-content: space-between;
     width: 400px;
-    background: linear-gradient(322.3deg, rgba(122, 207, 255, 0.14) 1.54%, rgba(34, 37, 37, 0) 74.88%);
+    /*background: linear-gradient(322.3deg, rgba(122, 207, 255, 0.14) 1.54%, rgba(34, 37, 37, 0) 74.88%);*/
+    background: rgba(68, 74, 126, 0.1);
     margin: 15px;
     transition: .5s;
+    border-radius: 15px;
     padding: 0 20px 0 0;
+    
+    font-size: 16pt;
 }
 
 .serv_box:hover {
@@ -293,13 +297,6 @@ li {
     list-style: none;
 }
 
-.pricing {
-    list-style: none;
-    padding: none;
-    font-size: 14pt;
-    font-weight: bold;
-    color: var(--primary-color);
-}
 
 /*----------------------------------------services-------------------------------*/
 
