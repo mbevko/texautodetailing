@@ -560,4 +560,8 @@ small {
     .contact_info {
         align-items: center;
     }
+
+    .contact_info_text {
+        text-align: left;
+    }
 }
