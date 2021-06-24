@@ -420,7 +420,6 @@ form {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      border: solid blue;
   }
 
   .contact_info_links a {
@@ -550,6 +549,11 @@ small {
         margin: 0;
     }
 
+    .serv_box {
+        margin: 0;
+        width: 300px;
+    }
+
     form {
         width: 300px;
     }
@@ -572,6 +576,5 @@ small {
 
     .contact_info_text {
         text-align: left;
-        border: solid magenta 1px;
     }
 }
