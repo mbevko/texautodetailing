@@ -258,6 +258,12 @@ a {
     text-align: center;
 }
 
+.serv_footings {
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
 .serv_box {
     height: inherit;
     color: var(--main-font-color);
@@ -341,6 +347,11 @@ form {
     background: none;
     color: white;
   }
+
+  form input::placeholder {
+      color: white;
+      font-size: 12pt;
+  }
   
   textarea {
     border-top: none;
@@ -350,10 +361,15 @@ form {
     margin-top: 20px;
     background: none;
     outline: none;
+    resize: none;
+    color: white;
+    font-size: 12pt;
   }
 
   textarea::placeholder {
       font-family: 'Roboto', sans-serif;
+      color: white;
+      font-size: 12pt;
   }
   
   .submit_btn {
@@ -422,6 +438,11 @@ form {
 
 .footer p {
     margin: 0;
+}
+
+small {
+    font-size: 9pt;
+    color: silver;
 }
 
 /*----------------------------------------mobile-------------------------------*/
