@@ -563,5 +563,6 @@ small {
 
     .contact_info_text {
         text-align: left;
+        width: 200px;
     }
 }
