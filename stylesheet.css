@@ -420,6 +420,7 @@ form {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      border: solid blue;
   }
 
   .contact_info_links a {
@@ -553,8 +554,16 @@ small {
         width: 300px;
     }
 
+    .contact_info_crit {
+        justify-content: center;
+    }
+
     .contact_container {
         justify-content: center;
+    }
+
+    .contact_info_links {
+        width: 70px;
     }
     
     .contact_info {
@@ -563,6 +572,6 @@ small {
 
     .contact_info_text {
         text-align: left;
-        width: 150px;
+        border: solid magenta 1px;
     }
 }
