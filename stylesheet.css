@@ -71,7 +71,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 100vh;
 }
 
@@ -84,7 +84,7 @@ a {
 
 .logo {
     width: 800px;
-    filter: invert(20%) sepia(99%) saturate(7499%) hue-rotate(219deg) brightness(90%) contrast(87%);
+    
 }
 
 .home_slogan_logo p {
@@ -92,8 +92,8 @@ a {
     font-weight: 600;
     margin: 0; 
     padding: 0;
-    background: -webkit-linear-gradient(top left, rgba(0, 0, 0, .3), rgba(255, 255, 255, 0.8)); 
-    background: linear-gradient(top, #000000, #ffffff); 
+    background: -webkit-linear-gradient(top left, rgba(0, 0, 0, 0.3), rgba(255, 240, 23, 0.8)); 
+    background: linear-gradient(top, #000000, rgba(255, 240, 23, 0.8)); 
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:center;
     -webkit-text-fill-color: transparent;
     position: relative;
