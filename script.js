@@ -3,6 +3,7 @@ let pbar = document.querySelectorAll(".full_gauge .pbar");
 const speed = 50;
 
 
+const fullAnimation = () => {
 
     filler.forEach(fill => {
         fill.style.cssText = `width: inherit; background: ${fill.getAttribute('data-bg')}`
@@ -17,7 +18,7 @@ const speed = 50;
 
             if (count < target) {
                 counter.innerText = Math.floor(count + inc);
-                setTimeout(updateCount, 40)
+                setTimeout(updateCount, 100)
 
             } else {
                 count.innerText = target;
@@ -26,3 +27,19 @@ const speed = 50;
 
         updateCount()
     })
+}
+    
+
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          fullAnimation()
+        }
+      })
+    })
+
+    pbar.forEach(el => {
+        observer.observe(el)
+    })
+    
