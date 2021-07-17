@@ -398,7 +398,6 @@ form {
 
   .info_container p {
       width: 300px;
-      
   }
 
   .contact_info_links a {
@@ -522,7 +521,14 @@ small {
     
     .contact_info {
         align-items: center;
-        width: 380px
+    }
+
+    .contact_info p {
+        width: 200px;
+    }
+
+    .contact_info_links a{
+        width: 50px;
     }
 
 }
