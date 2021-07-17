@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
     font-family: var(--font-style-one);
     background: linear-gradient(243.18deg, #4552e2 0%, rgba(56, 56, 56, 0) 100%), #000000;
+    overflow-x: hidden;
 }
 
 :root {
