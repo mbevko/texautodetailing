@@ -468,6 +468,10 @@ small {
     .logo {
         width: 360px;
     }
+
+    .scroll_container {
+        bottom: 20%;
+    }
     
 
     .home_info p {
