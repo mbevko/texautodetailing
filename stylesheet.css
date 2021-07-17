@@ -17,7 +17,7 @@ body {
     --main-font-color: #acacac;
     --font-style-one: 'Saira', sans-serif;
     --font-style-two: 'Ropa Sans', sans-serif;
-    --primary-color: #4552e2;
+    --primary-color: #fff;
     --secondary-color: #114fc8;
     --background-color: linear-gradient(243.18deg, #25273f 0%, rgba(56, 56, 56, 0) 100%), #000000;
 }
@@ -46,6 +46,7 @@ a {
     padding: 0 50px;
     position: fixed;
     width: 100vw;
+    z-index: 100;
 }
 
 .nav_items {
@@ -84,13 +85,6 @@ a {
     height: 100vh;
 }
 
-.home_slogan_logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .logo {
     width: 800px;
     
@@ -112,7 +106,7 @@ a {
 
 .scroll_link {
     border: solid white 1px;
-    box-shadow: 0 0 0 15px 2px white;
+    box-shadow: 0 0 5px white;
     font-size: 15pt;
     cursor: pointer;
     z-index: 2;
@@ -129,6 +123,8 @@ a {
     flex-direction: column;
     align-items: center;
     max-height: 150px;
+    position: absolute;
+    bottom: 0;
 }
 
 .scroll_icon {
@@ -155,19 +151,25 @@ a {
 .see_more {
     color: black;
     padding-top: 10px;
+
 }
 
 
 /*----------------------------------------services-------------------------------*/
+
+ .full_gauge, .bar, .filler, .pbar, .gauge_caption {
+    transform: scale(1.1)
+}
+
 .gauge_container {
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
-    min-height: 400px;
+    min-height: 600px;
     max-height: 900px;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
     /*background: linear-gradient(243.18deg, #2F303A 0%, rgba(56, 56, 56, 0) 100%), #000000;*/
   }
 
@@ -229,7 +231,7 @@ a {
 
 .service_heading {
     font-size: 50pt;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
@@ -373,17 +375,10 @@ form {
       color: white;
   }
 
-  .contact_info p {
-      margin-bottom: 10px;
-      width: inherit;
-      color: var(--primary-color)
-  }
-
   .contact_info_crit {
       margin-top: 50px;
       width: 500px; 
       display: flex;
-      text-align: center;
       height: 300px;
       justify-content: space-evenly;
   }
@@ -392,12 +387,24 @@ form {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      padding-bottom: 50px;
+  }
+
+  .info_container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+
+  .info_container p {
+      width: 300px;
+      
   }
 
   .contact_info_links a {
-      color: blue;
+      color: #57ff9d80;
       font-size: 24pt;
-      margin-top: 30px;
+      width: 100px;
   }
 
   .contact_info_text {
@@ -406,7 +413,7 @@ form {
       justify-content: space-evenly;
       font-size: 14pt;
       text-align: center;
-      width: 250px;
+      font-weight: bold;
   }
 
   .info_icons {
@@ -416,8 +423,8 @@ form {
       justify-content: space-around;
       align-items: center;
       width: 200px;
-      margin: auto;
-      
+      margin: 0 auto;
+      border-top: solid yellow 1px;
   }
 
   .info_icons a {
@@ -508,15 +515,9 @@ small {
         justify-content: center;
     }
 
-    .contact_info_links {
-        width: 70px;
-    }
     
     .contact_info {
         align-items: center;
     }
 
-    .contact_info_text {
-        text-align: left;
-    }
 }
